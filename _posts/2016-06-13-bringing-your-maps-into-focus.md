@@ -10,13 +10,13 @@ authors:
 
 Here at Emory, we have some pretty cool old [maps of Atlanta](http://www.digitalgallery.emory.edu/luna/servlet/view/all/where/Atlanta?sort=title%2Cpage_no_%2Ccity%2Cdate) that we wanted to share in a more interactive way. But when we tried, the maps looked like this:
 
-<a class="jsbin-embed" href="http://jsbin.com/howitu/1/embed?output&height=500px">JS Bin on jsbin.com</a>
-<script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+<a class="jsbin-embed" href="https://jsbin.com/howitu/1/embed?output&height=500px">JS Bin on jsbin.com</a>
+<script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 After a good bit of research, lots of trial and error, and working with our colleagues [Eric Willoughby](http://library.gsu.edu/profile/eric-willoughby/) at Georgia State University and [Amanda Henley](https://twitter.com/gislibrarian) at the University of North Carolina, we came up with a process that gave us this:
 
-<a class="jsbin-embed" href="http://jsbin.com/gekulo/2/embed?output&height=500px">JS Bin on jsbin.com</a>
-<script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+<a class="jsbin-embed" href="https://jsbin.com/gekulo/2/embed?output&height=500px">JS Bin on jsbin.com</a>
+<script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 
 ## What We Did
@@ -29,8 +29,8 @@ Finally, like the examples above, we used [Leaflet](http://leafletjs.com/) to di
 ## What We Did *Wrong*
 Our first problem was that the GeoTIFF is a high resolution image. In the first example on this page, we were squeezing a 5,931 x 5,779 pixel image (the full resolution) into a 326 x 276 pixel box (for the zoom level shown above). There’s just too much data to display clearly. Notice that if you zoom all the way in to our original example, the map looks great.
 
-<a class="jsbin-embed" href="http://jsbin.com/jinure/embed?output&height=500px">JS Bin on jsbin.com</a>
-<script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+<a class="jsbin-embed" href="https://jsbin.com/jinure/embed?output&height=500px">JS Bin on jsbin.com</a>
+<script src="https://static.jsbin.com/js/embed.min.js?3.35.12"></script>
 
 Our other problem was that we used a coordinate system that is inappropriate for web display. Tiled base maps that are provided by organizations like [OpenSteetMap](http://www.openstreetmap.org/about) are based on [EPSG:3857](http://spatialreference.org/ref/sr-org/7483/), aka [WGS 84  Web Mercator](https://en.wikipedia.org/wiki/Web_Mercator#EPSG:3857).
 
