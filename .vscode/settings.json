@@ -1,4 +1,5 @@
 {
+  "git.enableSmartCommit": true,
   "files.exclude": {
     "_site": "explorerExcludedFiles",
     ".sass-cache": "explorerExcludedFiles",
