@@ -10,8 +10,8 @@ authors:
 
 Here at Emory, we have some pretty cool old [maps of Atlanta](http://www.digitalgallery.emory.edu/luna/servlet/view/all/where/Atlanta?sort=title%2Cpage_no_%2Ccity%2Cdate) that we wanted to share in a more interactive way. But when we tried, the maps looked like this:
 
-<a class="jsbin-embed" href="http://jsbin.com/howitu/1/embed?output&height=500px">JS Bin on jsbin.com</a>
-<script src="http://static.jsbin.com/js/embed.min.js?3.35.12"></script>
+<p data-height="500" data-theme-id="0" data-slug-hash="eExoyO" data-default-tab="result" data-user="jayvarner" data-embed-version="2" data-pen-title="eExoyO" class="codepen">See the Pen <a href="https://codepen.io/jayvarner/pen/eExoyO/">eExoyO</a> by Jay Varner (<a href="https://codepen.io/jayvarner">@jayvarner</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 After a good bit of research, lots of trial and error, and working with our colleagues [Eric Willoughby](http://library.gsu.edu/profile/eric-willoughby/) at Georgia State University and [Amanda Henley](https://twitter.com/gislibrarian) at the University of North Carolina, we came up with a process that gave us this:
 
