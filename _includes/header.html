@@ -34,9 +34,10 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		  <span class="post-meta">By: {{page.authors | join: ', '}}</span>
 		  {% endif %}
         </div>
       </div>
@@ -59,9 +60,16 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
-		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
+		  <span class="post-meta">
+        By: {% for post_author in page.authors %}
+          {% assign author = site.data.authors[post_author] %}
+          {{ author.name}}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </span>
+    <br />
+    <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
         </div>
       </div>
