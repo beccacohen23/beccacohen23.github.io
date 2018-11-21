@@ -35,10 +35,10 @@ Our first problem was that the GeoTIFF is a high resolution image. In the first 
 Our other problem was that we used a coordinate system that is inappropriate for web display. Tiled base maps that are provided by organizations like [OpenSteetMap](http://www.openstreetmap.org/about) are based on [EPSG:3857](http://spatialreference.org/ref/sr-org/7483/), aka [WGS 84  Web Mercator](https://en.wikipedia.org/wiki/Web_Mercator#EPSG:3857).
 
 ## GDAL Can Solve those Problems
-"[GDAL](http://www.gdal.org/) is a translator library for raster and vector geospatial data formats..." This is our three step process.
+"[GDAL](http://www.gdal.org/) is a translator library for raster and vector geospatial data formats..." This is our ~~three~~ two[^fewer] step process.
 
 ### gdalwarp
-We use `gdalwarp` to reproject, resample, add internal tiling, and compress[^fewer]
+We use `gdalwarp` to reproject, resample, add internal tiling, and compress.
 
 [^fewer]: In previous talks and workshops, we presented a three-step process where we did the tiling and compressed the image using `gdal_translate`. While writing this post we realized a way to combine these processes with `gdalwarp`.
 
