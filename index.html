@@ -22,6 +22,12 @@ use-site-title: true
       Posted on {{ post.date | date: "%B %-d, %Y" }}
     </p>
 
+    {% if post.updated %}
+      <p class="post-meta">
+        Updated on {{ post.updated | date: "%B %-d, %Y" }}
+      </p>
+    {% endif %}
+
     <div class="post-entry-container">
       {% if post.image %}
       <div class="post-image">

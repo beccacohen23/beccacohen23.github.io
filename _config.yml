@@ -185,6 +185,13 @@ prose:
           help: "Enter date of post."
           placeholder: "yyyy-mm-dd"
           alterable: true
+      - name: "updated"
+        field:
+          element: "text"
+          label: "Updated Date"
+          help: "Enter date of post was updated."
+          placeholder: "yyyy-mm-dd"
+          alterable: true
       - name: "image"
         field:
           element: "text"
