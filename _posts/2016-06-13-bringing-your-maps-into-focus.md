@@ -88,7 +88,7 @@ Now you have a new GeoTIFF projected in Web Mercator and preserved your original
 
 ##### About Transparency and JPEG Compression
 
-If the GeoTIFF is not a perfect rectangle, or if its orientation is not straight north/south or east/west, a black or white border will fill the empty space[^examples]. In short, the JPEGs do not have a fourth band for transparency. You *can* add the fourth band to a JPEG compressed GeoTIFF, but it negates the file size savings. To include the fourth alpha band replace teh `-co 'COMPRESS=JPEG'` option in the above command with `-srcnodata 0 -dstalpha`[^alpha].
+If the GeoTIFF is not a perfect rectangle, or if its orientation is not straight north/south or east/west, a black or white border will fill the empty space[^examples]. In short, the JPEGs do not have a fourth band for transparency. You *can* add the fourth band to a JPEG compressed GeoTIFF, but it negates the file size savings. To include the fourth alpha band replace the `-co 'COMPRESS=JPEG'` option in the above command with `-srcnodata 0 -dstalpha`[^alpha].
 
 [^examples]: The map [in this example](https://codepen.io/jayvarner/full/mdBYRyR) not perfectly straight and compressed with JPEG. [This is ths same map](https://codepen.io/jayvarner/full/PoJvWPK) not using JPEG compression and has the alpha band.
 
